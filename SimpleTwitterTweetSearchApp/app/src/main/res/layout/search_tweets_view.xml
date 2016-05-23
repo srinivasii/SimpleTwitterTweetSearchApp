@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".view.SearchTweetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/showtweet_TXT_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/showtweet_IMG_search"
+            android:hint="@string/search"
+            />
+        <ImageView
+            android:id="@+id/showtweet_IMG_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/showtweet_BTN_top3tweets"
+            android:src="@android:drawable/ic_menu_search"/>
+
+        <Button
+            android:id="@+id/showtweet_BTN_top3tweets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="top3tweets"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/showtweet_LST_search"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_list_margin"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+</LinearLayout>
